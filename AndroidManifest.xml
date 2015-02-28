@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.mythos.touhoucartoonreader"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.bdqn.comic.activity.sys.LoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.bdqn.comic.activity.sdcard.BookMarkActivity" >
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.bdqn.comic.activity.sys.InitActivity" >
+        </activity>
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.bdqn.comic.activity.sdcard.SDcardActivity" >
+        </activity>
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.bdqn.comic.activity.sdcard.SDcardHistoryActivity" >
+        </activity>
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.bdqn.comic.activity.sdcard.TabMainActivity" >
+        </activity>
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.bdqn.comic.activity.core.MainActivity" >
+        </activity>
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="com.bdqn.comic.activity.core.BaseActivityctivity" >
+        </activity>
+    </application>
+ <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>
